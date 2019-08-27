@@ -197,7 +197,6 @@ public class Love_project extends JFrame implements ActionListener {
 //			---------------------------------------------------------------------
 
 			bggif_1 = getIcon("bggif_1.gif");
-//			bggif_1 = new ImageIcon(new URL("https://i.imgur.com/jNmeOmF.gif"));
 			Bggif_1 = new JLabel(bggif_1);
 			Bggif_1.setLocation(50, 240);
 			Bggif_1.setSize(200, 200);
@@ -205,7 +204,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bggif_1.setVisible(true);
 
 			bggif_2 = getIcon("bggif_2.gif");
-//			bggif_2 = new ImageIcon(new URL("https://i.imgur.com/AZ7SJOt.gif"));
 			Bggif_2 = new JLabel(bggif_2);
 			Bggif_2.setLocation(500, 240);
 			Bggif_2.setSize(200, 200);
@@ -213,7 +211,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bggif_2.setVisible(true);
 
 			bg = getIcon("bg.png");
-//			bg = new ImageIcon(new URL("https://i.imgur.com/bwzjPwZ.png"));
 			Bg = new JLabel(bg);
 			Bg.setLocation(0, -80);
 			Bg.setSize(835, 700);
@@ -221,7 +218,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg.setVisible(true);
 
 			gif_1 = getIcon("gif_1.gif");
-//			gif_1 = new ImageIcon(new URL("https://i.imgur.com/9tg1YEz.gif"));
 			Gif_1 = new JLabel(gif_1);
 			Gif_1.setLocation(0, 50);
 			Gif_1.setSize(835, 450);
@@ -229,7 +225,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Gif_1.setVisible(false);
 
 			gif_2 = getIcon("gif_2.gif");
-//			gif_2 = new ImageIcon(new URL("https://j.gifs.com/0YAPo7.gif"));
 			Gif_2 = new JLabel(gif_2);
 			Gif_2.setLocation(0, 50);
 			Gif_2.setSize(835, 400);
@@ -237,7 +232,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Gif_2.setVisible(false);
 
 			gif_3 = getIcon("gif_3.gif");
-//			gif_3 = new ImageIcon(new URL("https://i.ya-webdesign.com/images/heart-gif-png-7.gif"));
 			Gif_3 = new JLabel(gif_3);
 			Gif_3.setLocation(0, 50);
 			Gif_3.setSize(835, 400);
@@ -245,7 +239,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Gif_3.setVisible(false);
 
 			gif_4 = getIcon("gif_4.gif");
-//			gif_4 = new ImageIcon(new URL("https://www.pixilart.com/images/art/da374a5e62cc15b.gif"));
 			Gif_4 = new JLabel(gif_4);
 			Gif_4.setLocation(0, 50);
 			Gif_4.setSize(835, 400);
@@ -253,7 +246,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Gif_4.setVisible(false);
 
 			bg_1 = getIcon("bg_1.png");
-//			bg_1 = new ImageIcon(new URL("https://i.imgur.com/m6t18z4.png"));
 			Bg_1 = new JLabel(bg_1);
 			Bg_1.setLocation(0, 0);
 			Bg_1.setSize(835, 450);
@@ -261,7 +253,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_1.setVisible(false);
 
 			bg_11 = getIcon("bg_11.png");
-//			bg_11 = new ImageIcon(new URL("https://i.imgur.com/VdbRgVu.png"));
 			Bg_11 = new JLabel(bg_11);
 			Bg_11.setLocation(0, 0);
 			Bg_11.setSize(835, 450);
@@ -269,7 +260,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_11.setVisible(false);
 
 			bg_12 = getIcon("bg_12.png");
-//			bg_12 = new ImageIcon(new URL("https://i.imgur.com/kekdMwJ.png"));
 			Bg_12 = new JLabel(bg_12);
 			Bg_12.setLocation(0, 0);
 			Bg_12.setSize(835, 450);
@@ -277,7 +267,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_12.setVisible(false);
 
 			bg_13 = getIcon("bg_13.png");
-//			bg_13 = new ImageIcon(new URL("https://i.imgur.com/UUOVDtF.png"));
 			Bg_13 = new JLabel(bg_13);
 			Bg_13.setLocation(0, 0);
 			Bg_13.setSize(835, 450);
@@ -285,7 +274,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_13.setVisible(false);
 
 			bg_14 = getIcon("bg_14.png");
-//			bg_14 = new ImageIcon(new URL("https://i.imgur.com/f8ecWFu.png"));
 			Bg_14 = new JLabel(bg_14);
 			Bg_14.setLocation(0, 0);
 			Bg_14.setSize(835, 450);
@@ -293,7 +281,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_14.setVisible(false);
 
 			bg_2 = getIcon("bg_2.png");
-//			bg_2 = new ImageIcon(new URL("https://i.imgur.com/cmfz6Qr.png"));
 			Bg_2 = new JLabel(bg_2);
 			Bg_2.setLocation(0, 0);
 			Bg_2.setSize(835, 450);
@@ -301,7 +288,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_2.setVisible(false);
 
 			bg_21 = getIcon("bg_21.png");
-//			bg_21 = new ImageIcon(new URL("https://i.imgur.com/KPGM43v.png"));
 			Bg_21 = new JLabel(bg_21);
 			Bg_21.setLocation(0, 0);
 			Bg_21.setSize(835, 450);
@@ -309,7 +295,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_21.setVisible(false);
 
 			bg_22 = getIcon("bg_22.png");
-//			bg_22 = new ImageIcon(new URL("https://i.imgur.com/XO9ug5U.png"));
 			Bg_22 = new JLabel(bg_22);
 			Bg_22.setLocation(0, 0);
 			Bg_22.setSize(835, 450);
@@ -317,7 +302,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_22.setVisible(false);
 
 			bg_23 = getIcon("bg_23.png");
-//			bg_23 = new ImageIcon(new URL("https://i.imgur.com/zoKunAg.png"));
 			Bg_23 = new JLabel(bg_23);
 			Bg_23.setLocation(0, 0);
 			Bg_23.setSize(835, 450);
@@ -325,7 +309,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_23.setVisible(false);
 
 			bg_24 = getIcon("bg_24.png");
-//			bg_24 = new ImageIcon(new URL("https://i.imgur.com/43BE1A5.png"));
 			Bg_24 = new JLabel(bg_24);
 			Bg_24.setLocation(0, 0);
 			Bg_24.setSize(835, 450);
@@ -333,7 +316,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_24.setVisible(false);
 
 			bg_25 = getIcon("bg_25.png");
-//			bg_25 = new ImageIcon(new URL("https://i.imgur.com/V1OtYr5.png"));
 			Bg_25 = new JLabel(bg_25);
 			Bg_25.setLocation(0, 0);
 			Bg_25.setSize(835, 450);
@@ -341,7 +323,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_25.setVisible(false);
 
 			bg_26 = getIcon("bg_26.png");
-//			bg_26 = new ImageIcon(new URL("https://i.imgur.com/PVFkF5p.png"));
 			Bg_26 = new JLabel(bg_26);
 			Bg_26.setLocation(0, 0);
 			Bg_26.setSize(835, 450);
@@ -349,7 +330,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_26.setVisible(false);
 
 			bg_27 = getIcon("bg_27.png");
-//			bg_27 = new ImageIcon(new URL("https://i.imgur.com/s6nyOg3.png"));
 			Bg_27 = new JLabel(bg_27);
 			Bg_27.setLocation(0, 0);
 			Bg_27.setSize(835, 450);
@@ -357,7 +337,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_27.setVisible(false);
 
 			bg_28 = getIcon("bg_28.png");
-//			bg_28 = new ImageIcon(new URL("https://i.imgur.com/u9xGKkx.png"));
 			Bg_28 = new JLabel(bg_28);
 			Bg_28.setLocation(0, 0);
 			Bg_28.setSize(835, 450);
@@ -365,7 +344,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_28.setVisible(false);
 
 			bg_29 = getIcon("bg_29.png");
-//			bg_29 = new ImageIcon(new URL("https://i.imgur.com/WUic9Lt.png"));
 			Bg_29 = new JLabel(bg_29);
 			Bg_29.setLocation(0, 0);
 			Bg_29.setSize(835, 450);
@@ -373,7 +351,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_29.setVisible(false);
 
 			bg_31 = getIcon("bg_31.png");
-//			bg_31 = new ImageIcon(new URL("https://i.imgur.com/IgMO9vP.png"));
 			Bg_31 = new JLabel(bg_31);
 			Bg_31.setLocation(0, 0);
 			Bg_31.setSize(835, 450);
@@ -381,7 +358,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_31.setVisible(false);
 
 			bg_32 = getIcon("bg_32.png");
-//			bg_32 = new ImageIcon(new URL("https://i.imgur.com/TgtMmNO.png"));
 			Bg_32 = new JLabel(bg_32);
 			Bg_32.setLocation(0, 0);
 			Bg_32.setSize(835, 450);
@@ -389,7 +365,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_32.setVisible(false);
 
 			bg_33 = getIcon("bg_33.png");
-//			bg_33 = new ImageIcon(new URL("https://i.imgur.com/R3H2DtU.png"));
 			Bg_33 = new JLabel(bg_33);
 			Bg_33.setLocation(0, 0);
 			Bg_33.setSize(835, 450);
@@ -397,7 +372,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_33.setVisible(false);
 
 			bg_34 = getIcon("bg_34.png");
-//			bg_34 = new ImageIcon(new URL("https://i.imgur.com/s6nyOg3.png"));
 			Bg_34 = new JLabel(bg_34);
 			Bg_34.setLocation(0, 0);
 			Bg_34.setSize(835, 450);
@@ -405,7 +379,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_34.setVisible(false);
 
 			bg_35 = getIcon("bg_35.png");
-//			bg_35 = new ImageIcon(new URL("https://i.imgur.com/TdzoWZO.png"));
 			Bg_35 = new JLabel(bg_35);
 			Bg_35.setLocation(0, 0);
 			Bg_35.setSize(835, 450);
@@ -413,7 +386,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_35.setVisible(false);
 
 			bg_36 = getIcon("bg_36.png");
-//			bg_36 = new ImageIcon(new URL("https://i.imgur.com/zKavBjD.png"));
 			Bg_36 = new JLabel(bg_36);
 			Bg_36.setLocation(0, 0);
 			Bg_36.setSize(835, 450);
@@ -421,7 +393,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_36.setVisible(false);
 
 			bg_37 = getIcon("bg_37.png");
-//			bg_37 = new ImageIcon(new URL("https://i.imgur.com/N4OXUyf.png"));
 			Bg_37 = new JLabel(bg_37);
 			Bg_37.setLocation(0, 0);
 			Bg_37.setSize(835, 450);
@@ -429,7 +400,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_37.setVisible(false);
 
 			bg_38 = getIcon("bg_38.png");
-//			bg_38 = new ImageIcon(new URL("https://i.imgur.com/gLpj8T0.png"));
 			Bg_38 = new JLabel(bg_38);
 			Bg_38.setLocation(0, 0);
 			Bg_38.setSize(835, 450);
@@ -437,7 +407,6 @@ public class Love_project extends JFrame implements ActionListener {
 			Bg_38.setVisible(false);
 
 			bg_39 = getIcon("bg_39.png");
-//			bg_39 = new ImageIcon(new URL("https://i.imgur.com/pGWQ8GO.png"));
 			Bg_39 = new JLabel(bg_39);
 			Bg_39.setLocation(0, 0);
 			Bg_39.setSize(835, 450);
