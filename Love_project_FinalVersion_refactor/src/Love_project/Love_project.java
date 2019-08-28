@@ -21,15 +21,6 @@ public class Love_project extends JFrame implements ActionListener {
 	int jump = 0;// 按鈕跳走
 	int m = 0;// 結局分支變數
 
-	// 執行區↓-------------------------------------------
-	public static void main(String[] args) {
-		Love_project frame = new Love_project();
-
-		frame.setVisible(true);
-		frame.setResizable(false);
-
-	}
-	// ↑---------------------------------------------
 
 	// 全域變數↓---------------------------------------
 	JPanel pl0 = new JPanel();// 封面panel(放按鈕)
@@ -105,7 +96,7 @@ public class Love_project extends JFrame implements ActionListener {
 	return icon;
 	}
 //	------------------------------------------------------------
-	public Love_project() { // 主要code
+	public static void main Love_project(String[] args) { // 主要code
 		setSize(809, 635);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(null);
