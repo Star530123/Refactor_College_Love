@@ -21,85 +21,102 @@ public class Love_project extends JFrame implements ActionListener {
 	int jump = 0;// 按鈕跳走
 	int m = 0;// 結局分支變數
 
+	// 執行區↓-------------------------------------------
+//	public static void main(String[] args) {
+//		Love_project frame = new Love_project();
+//
+//		frame.setVisible(true);
+//		frame.setResizable(false);
+//
+//	}
+	// ↑---------------------------------------------
 
 	// 全域變數↓---------------------------------------
-	JPanel pl0 = new JPanel();// 封面panel(放按鈕)
-	JPanel pl1 = new JPanel();// 第1頁下方panel
-	JPanel color = new JPanel();// 馬賽克
+	static JPanel pl0 = new JPanel();// 封面panel(放按鈕)
+	static JPanel pl1 = new JPanel();// 第1頁下方panel
+	static JPanel color = new JPanel();// 馬賽克
 
-	JTextArea story = new JTextArea(); // 文字敘述
+	static JTextArea story = new JTextArea(); // 文字敘述
 
-	JButton btn_next = new JButton("NEXT");
-	JButton btn_back = new JButton("BACK");
-	JButton btn0_1 = new JButton("開始");
-	JButton btn0_2 = new JButton("如果你是高富帥");
-	JButton btn1 = new JButton("a");
-	JButton btn2 = new JButton("b");
-	JButton btn3 = new JButton("c");
+	static JButton btn_next = new JButton("NEXT");
+	static JButton btn_back = new JButton("BACK");
+	static JButton btn0_1 = new JButton("開始");
+	static JButton btn0_2 = new JButton("如果你是高富帥");
+	static JButton btn1 = new JButton("a");
+	static JButton btn2 = new JButton("b");
+	static JButton btn3 = new JButton("c");
 
-	String girl = "Heroine";// 女主角名字
+	static String girl = "Heroine";// 女主角名字
 	// ↑------------------------------------------------
 
 //	愛心變數--------------------------------------------
-	public JPanel panelLove = new JPanel();   //愛心圖案
-	public JLabel labelBack = new JLabel();   //血條背景色(粉紅)
-	public JLabel labelColor = new JLabel();  //調整血條用(白色)
+	public static JPanel panelLove = new JPanel();   //愛心圖案
+	public static JLabel labelBack = new JLabel();   //血條背景色(粉紅)
+	public static JLabel labelColor = new JLabel();  //調整血條用(白色)
 	public int finalPosition;         //每次增減後的最終血條位置
-	public int x_Location = 70;	      //血條位置(x軸) (固定)
-	public int y_Location = 100;      //愛心位置(y軸) (動態)
-	public int colorLen;			  //血條長度
-	public int judge = 0;			  //第幾個back鍵
-	public int scene = 0;			  //哪一個button
-	public int backInitialSize = 100; //初始血條長度  = (200-backInitialSize)
-	public int score11 = -15;
-	public int score12 = -5;
-	public int score13 = 10;
-	public int score21 = -15;
-	public int score22 = -5;
-	public int score23 = 10;
-	public int score31 = -15;
-	public int score32 = -5;
-	public int score41 = -100;
-	public int score42 = -100;
-	public int score43 = 200;
+	public static int x_Location = 70;	      //血條位置(x軸) (固定)
+	public static int y_Location = 100;      //愛心位置(y軸) (動態)
+	public static int colorLen;			  //血條長度
+	public static int judge = 0;			  //第幾個back鍵
+	public static int scene = 0;			  //哪一個button
+	public static int backInitialSize = 100; //初始血條長度  = (200-backInitialSize)
+	public static int score11 = -15;
+	public static int score12 = -5;
+	public static int score13 = 10;
+	public static int score21 = -15;
+	public static int score22 = -5;
+	public static int score23 = 10;
+	public static int score31 = -15;
+	public static int score32 = -5;
+	public static int score41 = -100;
+	public static int score42 = -100;
+	public static int score43 = 200;
 	
-//	public JLabel scoreArea = new JLabel("", SwingConstants.CENTER);
+ //	public JLabel scoreArea = new JLabel("", SwingConstants.CENTER);
 //	public String score = null;
 //	----------------------------------------------------
 	
 	// 照片宣告區↓-------------------------------------
-	ImageIcon bg = null, bggif_1 = null, bggif_2 = null;
-	JLabel Bg = null, Bggif_1 = null, Bggif_2 = null;
+	static ImageIcon bg = null;
+ // 照片宣告區↓-------------------------------------
+	static ImageIcon bggif_1 = null;
+ // 照片宣告區↓-------------------------------------
+	static ImageIcon bggif_2 = null;
+	static JLabel Bg = null;
+	static JLabel Bggif_1 = null;
+	static JLabel Bggif_2 = null;
 
-	ImageIcon gif_1 = null, gif_2 = null, gif_3 = null, gif_4 = null;
-	JLabel Gif_1 = null, Gif_2 = null, Gif_3 = null, Gif_4 = null;
+	static ImageIcon gif_1 = null, gif_2 = null, gif_3 = null, gif_4 = null;
+	static JLabel Gif_1 = null, Gif_2 = null, Gif_3 = null, Gif_4 = null;
 
-	ImageIcon bg_1 = null, bg_11 = null, bg_12 = null, bg_13 = null, bg_14 = null;
-	JLabel Bg_1 = null, Bg_11 = null, Bg_12 = null, Bg_13 = null, Bg_14 = null;
+	static ImageIcon bg_1 = null, bg_11 = null, bg_12 = null, bg_13 = null, bg_14 = null;
+	static JLabel Bg_1 = null, Bg_11 = null, Bg_12 = null, Bg_13 = null, Bg_14 = null;
 
-	ImageIcon bg_2 = null, bg_21 = null, bg_22 = null, bg_23 = null, bg_24 = null, bg_25 = null, bg_26 = null,
+	static ImageIcon bg_2 = null, bg_21 = null, bg_22 = null, bg_23 = null, bg_24 = null, bg_25 = null, bg_26 = null,
 			bg_27 = null, bg_28 = null, bg_29 = null;
-	JLabel Bg_2 = null, Bg_21 = null, Bg_22 = null, Bg_23 = null, Bg_24 = null, Bg_25 = null, Bg_26 = null,
+	static JLabel Bg_2 = null, Bg_21 = null, Bg_22 = null, Bg_23 = null, Bg_24 = null, Bg_25 = null, Bg_26 = null,
 			Bg_27 = null, Bg_28 = null, Bg_29 = null;
 
-	ImageIcon bg_31 = null, bg_32 = null, bg_33 = null, bg_34 = null, bg_35 = null, bg_36 = null, bg_37 = null,
+	static ImageIcon bg_31 = null, bg_32 = null, bg_33 = null, bg_34 = null, bg_35 = null, bg_36 = null, bg_37 = null,
 			bg_38 = null, bg_39 = null;
-	JLabel Bg_31 = null, Bg_32 = null, Bg_33 = null, Bg_34 = null, Bg_35 = null, Bg_36 = null, Bg_37 = null,
+	static JLabel Bg_31 = null, Bg_32 = null, Bg_33 = null, Bg_34 = null, Bg_35 = null, Bg_36 = null, Bg_37 = null,
 			Bg_38 = null, Bg_39 = null;
 	// ↑------------------------------------------------
 	
 //	圖片輸入-------------------------------------------------------------------------------
-	public ImageIcon getIcon(String filePath) {  
+	public static ImageIcon getIcon(String filePath) {  
 	Image img;
 	img = Toolkit.getDefaultToolkit().getImage(filePath);
 	ImageIcon icon = new ImageIcon(img);
 	return icon;
 	}
 //	------------------------------------------------------------
-	public static void main Love_project(String[] args) { // 主要code
-		setSize(809, 635);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLayout(null);
+	public static void main(String[] args) { // 主要code
+		Love_project frame = new Love_project();
+		frame.setVisible(true);
+		frame.setSize(809, 635);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setLayout(null);
 		pl0.setLayout(null);// 封面panel
 		pl0.setSize(800, 635);//450
 		pl0.setLocation(0, 0);
@@ -112,7 +129,7 @@ public class Love_project extends JFrame implements ActionListener {
 		color.setSize(115, 43);
 		color.setLocation(133, 353);
 		color.setBackground(Color.WHITE);
-		add(color);
+		frame.add(color);
 		color.setVisible(false);
 
 		story.setLocation(20, 20);// 文字敘述區
@@ -128,7 +145,7 @@ public class Love_project extends JFrame implements ActionListener {
 		btn0_1.setFont(new Font("文鼎甜妞體B", Font.BOLD, 32));
 		btn0_2.setLocation(300, 340);
 		btn0_2.setSize(200, 50);
-		btn0_2.setFont(new Font("文鼎甜妞體B", Font.BOLD, 24));
+		btn0_2.setFont(new Font("文鼎甜妞體B", Font.BOLD, 20));
 
 		// 第二區元件↓~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		btn_next.setLocation(650, 85);
@@ -176,9 +193,9 @@ public class Love_project extends JFrame implements ActionListener {
 //			scoreArea.setFont(new Font("文鼎甜妞體B", Font.BOLD, 20));
 //			scoreArea.setForeground(Color.PINK);
 
-			add(panelLove);
-			add(labelColor);
-			add(labelBack);
+			frame.add(panelLove);
+			frame.add(labelColor);
+			frame.add(labelBack);
 //			add(scoreArea);
 
 			panelLove.setVisible(false);
@@ -188,220 +205,251 @@ public class Love_project extends JFrame implements ActionListener {
 //			---------------------------------------------------------------------
 
 			bggif_1 = getIcon("bggif_1.gif");
+//			bggif_1 = new ImageIcon(new URL("https://i.imgur.com/jNmeOmF.gif"));
 			Bggif_1 = new JLabel(bggif_1);
 			Bggif_1.setLocation(50, 240);
 			Bggif_1.setSize(200, 200);
-			add(Bggif_1);
+			frame.add(Bggif_1);
 			Bggif_1.setVisible(true);
 
 			bggif_2 = getIcon("bggif_2.gif");
+//			bggif_2 = new ImageIcon(new URL("https://i.imgur.com/AZ7SJOt.gif"));
 			Bggif_2 = new JLabel(bggif_2);
 			Bggif_2.setLocation(500, 240);
 			Bggif_2.setSize(200, 200);
-			add(Bggif_2);
+			frame.add(Bggif_2);
 			Bggif_2.setVisible(true);
 
 			bg = getIcon("bg.png");
+//			bg = new ImageIcon(new URL("https://i.imgur.com/bwzjPwZ.png"));
 			Bg = new JLabel(bg);
 			Bg.setLocation(0, -80);
 			Bg.setSize(835, 700);
-			add(Bg);
+			frame.add(Bg);
 			Bg.setVisible(true);
 
 			gif_1 = getIcon("gif_1.gif");
+//			gif_1 = new ImageIcon(new URL("https://i.imgur.com/9tg1YEz.gif"));
 			Gif_1 = new JLabel(gif_1);
 			Gif_1.setLocation(0, 50);
 			Gif_1.setSize(835, 450);
-			add(Gif_1);
+			frame.add(Gif_1);
 			Gif_1.setVisible(false);
 
 			gif_2 = getIcon("gif_2.gif");
+//			gif_2 = new ImageIcon(new URL("https://j.gifs.com/0YAPo7.gif"));
 			Gif_2 = new JLabel(gif_2);
 			Gif_2.setLocation(0, 50);
 			Gif_2.setSize(835, 400);
-			add(Gif_2);
+			frame.add(Gif_2);
 			Gif_2.setVisible(false);
 
 			gif_3 = getIcon("gif_3.gif");
+//			gif_3 = new ImageIcon(new URL("https://i.ya-webdesign.com/images/heart-gif-png-7.gif"));
 			Gif_3 = new JLabel(gif_3);
 			Gif_3.setLocation(0, 50);
 			Gif_3.setSize(835, 400);
-			add(Gif_3);
+			frame.add(Gif_3);
 			Gif_3.setVisible(false);
 
 			gif_4 = getIcon("gif_4.gif");
+//			gif_4 = new ImageIcon(new URL("https://www.pixilart.com/images/art/da374a5e62cc15b.gif"));
 			Gif_4 = new JLabel(gif_4);
 			Gif_4.setLocation(0, 50);
 			Gif_4.setSize(835, 400);
-			add(Gif_4);
+			frame.add(Gif_4);
 			Gif_4.setVisible(false);
 
 			bg_1 = getIcon("bg_1.png");
+//			bg_1 = new ImageIcon(new URL("https://i.imgur.com/m6t18z4.png"));
 			Bg_1 = new JLabel(bg_1);
 			Bg_1.setLocation(0, 0);
 			Bg_1.setSize(835, 450);
-			add(Bg_1);
+			frame.add(Bg_1);
 			Bg_1.setVisible(false);
 
 			bg_11 = getIcon("bg_11.png");
+//			bg_11 = new ImageIcon(new URL("https://i.imgur.com/VdbRgVu.png"));
 			Bg_11 = new JLabel(bg_11);
 			Bg_11.setLocation(0, 0);
 			Bg_11.setSize(835, 450);
-			add(Bg_11);
+			frame.add(Bg_11);
 			Bg_11.setVisible(false);
 
 			bg_12 = getIcon("bg_12.png");
+//			bg_12 = new ImageIcon(new URL("https://i.imgur.com/kekdMwJ.png"));
 			Bg_12 = new JLabel(bg_12);
 			Bg_12.setLocation(0, 0);
 			Bg_12.setSize(835, 450);
-			add(Bg_12);
+			frame.add(Bg_12);
 			Bg_12.setVisible(false);
 
 			bg_13 = getIcon("bg_13.png");
+//			bg_13 = new ImageIcon(new URL("https://i.imgur.com/UUOVDtF.png"));
 			Bg_13 = new JLabel(bg_13);
 			Bg_13.setLocation(0, 0);
 			Bg_13.setSize(835, 450);
-			add(Bg_13);
+			frame.add(Bg_13);
 			Bg_13.setVisible(false);
 
 			bg_14 = getIcon("bg_14.png");
+//			bg_14 = new ImageIcon(new URL("https://i.imgur.com/f8ecWFu.png"));
 			Bg_14 = new JLabel(bg_14);
 			Bg_14.setLocation(0, 0);
 			Bg_14.setSize(835, 450);
-			add(Bg_14);
+			frame.add(Bg_14);
 			Bg_14.setVisible(false);
 
 			bg_2 = getIcon("bg_2.png");
+//			bg_2 = new ImageIcon(new URL("https://i.imgur.com/cmfz6Qr.png"));
 			Bg_2 = new JLabel(bg_2);
 			Bg_2.setLocation(0, 0);
 			Bg_2.setSize(835, 450);
-			add(Bg_2);
+			frame.add(Bg_2);
 			Bg_2.setVisible(false);
 
 			bg_21 = getIcon("bg_21.png");
+//			bg_21 = new ImageIcon(new URL("https://i.imgur.com/KPGM43v.png"));
 			Bg_21 = new JLabel(bg_21);
 			Bg_21.setLocation(0, 0);
 			Bg_21.setSize(835, 450);
-			add(Bg_21);
+			frame.add(Bg_21);
 			Bg_21.setVisible(false);
 
 			bg_22 = getIcon("bg_22.png");
+//			bg_22 = new ImageIcon(new URL("https://i.imgur.com/XO9ug5U.png"));
 			Bg_22 = new JLabel(bg_22);
 			Bg_22.setLocation(0, 0);
 			Bg_22.setSize(835, 450);
-			add(Bg_22);
+			frame.add(Bg_22);
 			Bg_22.setVisible(false);
 
 			bg_23 = getIcon("bg_23.png");
+//			bg_23 = new ImageIcon(new URL("https://i.imgur.com/zoKunAg.png"));
 			Bg_23 = new JLabel(bg_23);
 			Bg_23.setLocation(0, 0);
 			Bg_23.setSize(835, 450);
-			add(Bg_23);
+			frame.add(Bg_23);
 			Bg_23.setVisible(false);
 
 			bg_24 = getIcon("bg_24.png");
+//			bg_24 = new ImageIcon(new URL("https://i.imgur.com/43BE1A5.png"));
 			Bg_24 = new JLabel(bg_24);
 			Bg_24.setLocation(0, 0);
 			Bg_24.setSize(835, 450);
-			add(Bg_24);
+			frame.add(Bg_24);
 			Bg_24.setVisible(false);
 
 			bg_25 = getIcon("bg_25.png");
+//			bg_25 = new ImageIcon(new URL("https://i.imgur.com/V1OtYr5.png"));
 			Bg_25 = new JLabel(bg_25);
 			Bg_25.setLocation(0, 0);
 			Bg_25.setSize(835, 450);
-			add(Bg_25);
+			frame.add(Bg_25);
 			Bg_25.setVisible(false);
 
 			bg_26 = getIcon("bg_26.png");
+//			bg_26 = new ImageIcon(new URL("https://i.imgur.com/PVFkF5p.png"));
 			Bg_26 = new JLabel(bg_26);
 			Bg_26.setLocation(0, 0);
 			Bg_26.setSize(835, 450);
-			add(Bg_26);
+			frame.add(Bg_26);
 			Bg_26.setVisible(false);
 
 			bg_27 = getIcon("bg_27.png");
+//			bg_27 = new ImageIcon(new URL("https://i.imgur.com/s6nyOg3.png"));
 			Bg_27 = new JLabel(bg_27);
 			Bg_27.setLocation(0, 0);
 			Bg_27.setSize(835, 450);
-			add(Bg_27);
+			frame.add(Bg_27);
 			Bg_27.setVisible(false);
 
 			bg_28 = getIcon("bg_28.png");
+//			bg_28 = new ImageIcon(new URL("https://i.imgur.com/u9xGKkx.png"));
 			Bg_28 = new JLabel(bg_28);
 			Bg_28.setLocation(0, 0);
 			Bg_28.setSize(835, 450);
-			add(Bg_28);
+			frame.add(Bg_28);
 			Bg_28.setVisible(false);
 
 			bg_29 = getIcon("bg_29.png");
+//			bg_29 = new ImageIcon(new URL("https://i.imgur.com/WUic9Lt.png"));
 			Bg_29 = new JLabel(bg_29);
 			Bg_29.setLocation(0, 0);
 			Bg_29.setSize(835, 450);
-			add(Bg_29);
+			frame.add(Bg_29);
 			Bg_29.setVisible(false);
 
 			bg_31 = getIcon("bg_31.png");
+//			bg_31 = new ImageIcon(new URL("https://i.imgur.com/IgMO9vP.png"));
 			Bg_31 = new JLabel(bg_31);
 			Bg_31.setLocation(0, 0);
 			Bg_31.setSize(835, 450);
-			add(Bg_31);
+			frame.add(Bg_31);
 			Bg_31.setVisible(false);
 
 			bg_32 = getIcon("bg_32.png");
+//			bg_32 = new ImageIcon(new URL("https://i.imgur.com/TgtMmNO.png"));
 			Bg_32 = new JLabel(bg_32);
 			Bg_32.setLocation(0, 0);
 			Bg_32.setSize(835, 450);
-			add(Bg_32);
+			frame.add(Bg_32);
 			Bg_32.setVisible(false);
 
 			bg_33 = getIcon("bg_33.png");
+//			bg_33 = new ImageIcon(new URL("https://i.imgur.com/R3H2DtU.png"));
 			Bg_33 = new JLabel(bg_33);
 			Bg_33.setLocation(0, 0);
 			Bg_33.setSize(835, 450);
-			add(Bg_33);
+			frame.add(Bg_33);
 			Bg_33.setVisible(false);
 
 			bg_34 = getIcon("bg_34.png");
+//			bg_34 = new ImageIcon(new URL("https://i.imgur.com/s6nyOg3.png"));
 			Bg_34 = new JLabel(bg_34);
 			Bg_34.setLocation(0, 0);
 			Bg_34.setSize(835, 450);
-			add(Bg_34);
+			frame.add(Bg_34);
 			Bg_34.setVisible(false);
 
 			bg_35 = getIcon("bg_35.png");
+//			bg_35 = new ImageIcon(new URL("https://i.imgur.com/TdzoWZO.png"));
 			Bg_35 = new JLabel(bg_35);
 			Bg_35.setLocation(0, 0);
 			Bg_35.setSize(835, 450);
-			add(Bg_35);
+			frame.add(Bg_35);
 			Bg_35.setVisible(false);
 
 			bg_36 = getIcon("bg_36.png");
+//			bg_36 = new ImageIcon(new URL("https://i.imgur.com/zKavBjD.png"));
 			Bg_36 = new JLabel(bg_36);
 			Bg_36.setLocation(0, 0);
 			Bg_36.setSize(835, 450);
-			add(Bg_36);
+			frame.add(Bg_36);
 			Bg_36.setVisible(false);
 
 			bg_37 = getIcon("bg_37.png");
+//			bg_37 = new ImageIcon(new URL("https://i.imgur.com/N4OXUyf.png"));
 			Bg_37 = new JLabel(bg_37);
 			Bg_37.setLocation(0, 0);
 			Bg_37.setSize(835, 450);
-			add(Bg_37);
+			frame.add(Bg_37);
 			Bg_37.setVisible(false);
 
 			bg_38 = getIcon("bg_38.png");
+//			bg_38 = new ImageIcon(new URL("https://i.imgur.com/gLpj8T0.png"));
 			Bg_38 = new JLabel(bg_38);
 			Bg_38.setLocation(0, 0);
 			Bg_38.setSize(835, 450);
-			add(Bg_38);
+			frame.add(Bg_38);
 			Bg_38.setVisible(false);
 
 			bg_39 = getIcon("bg_39.png");
+//			bg_39 = new ImageIcon(new URL("https://i.imgur.com/pGWQ8GO.png"));
 			Bg_39 = new JLabel(bg_39);
 			Bg_39.setLocation(0, 0);
 			Bg_39.setSize(835, 450);
-			add(Bg_39);
+			frame.add(Bg_39);
 			Bg_39.setVisible(false);
 
 		} catch (Exception e) {
@@ -413,7 +461,7 @@ public class Love_project extends JFrame implements ActionListener {
 		// 封面幕
 		pl0.add(btn0_1);
 		pl0.add(btn0_2);
-		add(pl0);
+		frame.add(pl0);
 
 		// 劇情幕
 		pl1.add(btn_next);
@@ -421,7 +469,7 @@ public class Love_project extends JFrame implements ActionListener {
 		pl1.add(btn1);
 		pl1.add(btn2);
 		pl1.add(btn3);
-		add(pl1);
+		frame.add(pl1);
 		btn1.setVisible(false);
 		btn2.setVisible(false);
 		btn3.setVisible(false);
@@ -429,13 +477,13 @@ public class Love_project extends JFrame implements ActionListener {
 		// ↑-----------------------------------------------
 
 		// 按鈕事件指令↓-----------------------------------------
-		btn0_1.addActionListener(this);
-		btn0_2.addActionListener(this);
-		btn1.addActionListener(this);
-		btn2.addActionListener(this);
-		btn3.addActionListener(this);
-		btn_next.addActionListener(this);
-		btn_back.addActionListener(this);
+		btn0_1.addActionListener(frame);
+		btn0_2.addActionListener(frame);
+		btn1.addActionListener(frame);
+		btn2.addActionListener(frame);
+		btn3.addActionListener(frame);
+		btn_next.addActionListener(frame);
+		btn_back.addActionListener(frame);
 		// ↑-------------------------------------------------
 
 	}
@@ -902,10 +950,10 @@ public class Love_project extends JFrame implements ActionListener {
 			btn_back.setVisible(true);
 			if (m % 4 == 1) { // 1壞結局
 				Bg_37.setVisible(true);
-				story.setText(girl + "：" + "\n  吼……那是甚麼爛片啦，這個時候還在開玩笑\n  不理你了啦！！");
+				story.setText(girl + "：" + "\n  吼……那是甚麼爛片啦，這個時候還在開玩笑\n  不理你了啦！！\n           。~。~。 配對失敗 。~。~。");
 			} else if (m % 4 == 2) { // 2壞結局
 				Bg_37.setVisible(true);
-				story.setText(girl + "：" + "\n  這個時候還在開玩笑\n  不理你了啦！！");				
+				story.setText(girl + "：" + "\n  這個時候還在開玩笑\n  不理你了啦！！\n           。~。~。 配對失敗 。~。~。");				
 			} else if (m % 4 == 3) { // 3好結局
 				Bg_33.setVisible(true);
 				story.setText(girl + "：" + "\n  好啊好啊，聽說最近有人很愛亂爬樹，\n  這樣很危險，如果掉下來怎麼辦！");
