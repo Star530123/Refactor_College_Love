@@ -183,19 +183,22 @@ public class Love_project extends JFrame implements ActionListener {
 			labelBack.setVisible(false);
 //			---------------------------------------------------------------------
 
-			bggif_1 = getIcon("bggif_1.gif");
-			Bggif_1 = new JLabel(bggif_1);
-			Bggif_1.setLocation(50, 240);
-			Bggif_1.setSize(200, 200);
-			frame.add(Bggif_1);
-			Bggif_1.setVisible(true);
+//			bggif_1 = getIcon("bggif_1.gif");
+//			Bggif_1 = new JLabel(bggif_1);
+//			Bggif_1.setLocation(50, 240);
+//			Bggif_1.setSize(200, 200);
+//			frame.add(Bggif_1);
+//			Bggif_1.setVisible(true);
+			Test test = new Test();
+			Bggif_1 = test.test1(bggif_1,Bggif_1,frame,"bggif_1.gif",50,240,200,200);
 
-			bggif_2 = getIcon("bggif_2.gif");
-			Bggif_2 = new JLabel(bggif_2);
-			Bggif_2.setLocation(500, 240);
-			Bggif_2.setSize(200, 200);
-			frame.add(Bggif_2);
-			Bggif_2.setVisible(true);
+//			bggif_2 = getIcon("bggif_2.gif");
+//			Bggif_2 = new JLabel(bggif_2);
+//			Bggif_2.setLocation(500, 240);
+//			Bggif_2.setSize(200, 200);
+//			frame.add(Bggif_2);
+//			Bggif_2.setVisible(true);
+			Bggif_2 = test.test1(bggif_2,Bggif_2,frame,"bggif_2.gif",500,240,200,200);
 
 			bg = getIcon("bg.png");
 			Bg = new JLabel(bg);
@@ -933,5 +936,7 @@ public class Love_project extends JFrame implements ActionListener {
 		// ↑--------------------------------------------------
 
 	}
+	
+	
 
 }
