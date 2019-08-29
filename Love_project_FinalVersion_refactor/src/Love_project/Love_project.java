@@ -182,227 +182,49 @@ public class Love_project extends JFrame implements ActionListener {
 			labelColor.setVisible(false);
 			labelBack.setVisible(false);
 //			---------------------------------------------------------------------
-
-//			bggif_1 = getIcon("bggif_1.gif");
-//			Bggif_1 = new JLabel(bggif_1);
-//			Bggif_1.setLocation(50, 240);
-//			Bggif_1.setSize(200, 200);
-//			frame.add(Bggif_1);
-//			Bggif_1.setVisible(true);
-			Test test = new Test();
-			Bggif_1 = test.test1(bggif_1,Bggif_1,frame,"bggif_1.gif",50,240,200,200);
-
-//			bggif_2 = getIcon("bggif_2.gif");
-//			Bggif_2 = new JLabel(bggif_2);
-//			Bggif_2.setLocation(500, 240);
-//			Bggif_2.setSize(200, 200);
-//			frame.add(Bggif_2);
-//			Bggif_2.setVisible(true);
-			Bggif_2 = test.test1(bggif_2,Bggif_2,frame,"bggif_2.gif",500,240,200,200);
-
-			bg = getIcon("bg.png");
-			Bg = new JLabel(bg);
-			Bg.setLocation(0, -80);
-			Bg.setSize(835, 700);
-			frame.add(Bg);
-			Bg.setVisible(true);
-
-			gif_1 = getIcon("gif_1.gif");
-			Gif_1 = new JLabel(gif_1);
-			Gif_1.setLocation(0, 50);
-			Gif_1.setSize(835, 450);
-			frame.add(Gif_1);
-			Gif_1.setVisible(false);
-
-			gif_2 = getIcon("gif_2.gif");
-			Gif_2 = new JLabel(gif_2);
-			Gif_2.setLocation(0, 50);
-			Gif_2.setSize(835, 400);
-			frame.add(Gif_2);
-			Gif_2.setVisible(false);
-
-			gif_3 = getIcon("gif_3.gif");
-			Gif_3 = new JLabel(gif_3);
-			Gif_3.setLocation(0, 50);
-			Gif_3.setSize(835, 400);
-			frame.add(Gif_3);
-			Gif_3.setVisible(false);
-
-			gif_4 = getIcon("gif_4.gif");
-			Gif_4 = new JLabel(gif_4);
-			Gif_4.setLocation(0, 50);
-			Gif_4.setSize(835, 400);
-			frame.add(Gif_4);
-			Gif_4.setVisible(false);
-
-			bg_1 = getIcon("bg_1.png");
-			Bg_1 = new JLabel(bg_1);
-			Bg_1.setLocation(0, 0);
-			Bg_1.setSize(835, 450);
-			frame.add(Bg_1);
-			Bg_1.setVisible(false);
-
-			bg_11 = getIcon("bg_11.png");
-			Bg_11 = new JLabel(bg_11);
-			Bg_11.setLocation(0, 0);
-			Bg_11.setSize(835, 450);
-			frame.add(Bg_11);
-			Bg_11.setVisible(false);
-
-			bg_12 = getIcon("bg_12.png");
-			Bg_12 = new JLabel(bg_12);
-			Bg_12.setLocation(0, 0);
-			Bg_12.setSize(835, 450);
-			frame.add(Bg_12);
-			Bg_12.setVisible(false);
-
-			bg_13 = getIcon("bg_13.png");
-			Bg_13 = new JLabel(bg_13);
-			Bg_13.setLocation(0, 0);
-			Bg_13.setSize(835, 450);
-			frame.add(Bg_13);
-			Bg_13.setVisible(false);
-
-			bg_14 = getIcon("bg_14.png");
-			Bg_14 = new JLabel(bg_14);
-			Bg_14.setLocation(0, 0);
-			Bg_14.setSize(835, 450);
-			frame.add(Bg_14);
-			Bg_14.setVisible(false);
-
-			bg_2 = getIcon("bg_2.png");
-			Bg_2 = new JLabel(bg_2);
-			Bg_2.setLocation(0, 0);
-			Bg_2.setSize(835, 450);
-			frame.add(Bg_2);
-			Bg_2.setVisible(false);
-
-			bg_21 = getIcon("bg_21.png");
-			Bg_21 = new JLabel(bg_21);
-			Bg_21.setLocation(0, 0);
-			Bg_21.setSize(835, 450);
-			frame.add(Bg_21);
-			Bg_21.setVisible(false);
-
-			bg_22 = getIcon("bg_22.png");
-			Bg_22 = new JLabel(bg_22);
-			Bg_22.setLocation(0, 0);
-			Bg_22.setSize(835, 450);
-			frame.add(Bg_22);
-			Bg_22.setVisible(false);
-
-			bg_23 = getIcon("bg_23.png");
-			Bg_23 = new JLabel(bg_23);
-			Bg_23.setLocation(0, 0);
-			Bg_23.setSize(835, 450);
-			frame.add(Bg_23);
-			Bg_23.setVisible(false);
-
-			bg_24 = getIcon("bg_24.png");
-			Bg_24 = new JLabel(bg_24);
-			Bg_24.setLocation(0, 0);
-			Bg_24.setSize(835, 450);
-			frame.add(Bg_24);
-			Bg_24.setVisible(false);
-
-			bg_25 = getIcon("bg_25.png");
-			Bg_25 = new JLabel(bg_25);
-			Bg_25.setLocation(0, 0);
-			Bg_25.setSize(835, 450);
-			frame.add(Bg_25);
-			Bg_25.setVisible(false);
-
-			bg_26 = getIcon("bg_26.png");
-			Bg_26 = new JLabel(bg_26);
-			Bg_26.setLocation(0, 0);
-			Bg_26.setSize(835, 450);
-			frame.add(Bg_26);
-			Bg_26.setVisible(false);
-
-			bg_27 = getIcon("bg_27.png");
-			Bg_27 = new JLabel(bg_27);
-			Bg_27.setLocation(0, 0);
-			Bg_27.setSize(835, 450);
-			frame.add(Bg_27);
-			Bg_27.setVisible(false);
-
-			bg_28 = getIcon("bg_28.png");
-			Bg_28 = new JLabel(bg_28);
-			Bg_28.setLocation(0, 0);
-			Bg_28.setSize(835, 450);
-			frame.add(Bg_28);
-			Bg_28.setVisible(false);
-
-			bg_29 = getIcon("bg_29.png");
-			Bg_29 = new JLabel(bg_29);
-			Bg_29.setLocation(0, 0);
-			Bg_29.setSize(835, 450);
-			frame.add(Bg_29);
-			Bg_29.setVisible(false);
-
-			bg_31 = getIcon("bg_31.png");
-			Bg_31 = new JLabel(bg_31);
-			Bg_31.setLocation(0, 0);
-			Bg_31.setSize(835, 450);
-			frame.add(Bg_31);
-			Bg_31.setVisible(false);
-
-			bg_32 = getIcon("bg_32.png");
-			Bg_32 = new JLabel(bg_32);
-			Bg_32.setLocation(0, 0);
-			Bg_32.setSize(835, 450);
-			frame.add(Bg_32);
-			Bg_32.setVisible(false);
-
-			bg_33 = getIcon("bg_33.png");
-			Bg_33 = new JLabel(bg_33);
-			Bg_33.setLocation(0, 0);
-			Bg_33.setSize(835, 450);
-			frame.add(Bg_33);
-			Bg_33.setVisible(false);
-
-			bg_34 = getIcon("bg_34.png");
-			Bg_34 = new JLabel(bg_34);
-			Bg_34.setLocation(0, 0);
-			Bg_34.setSize(835, 450);
-			frame.add(Bg_34);
-			Bg_34.setVisible(false);
-
-			bg_35 = getIcon("bg_35.png");
-			Bg_35 = new JLabel(bg_35);
-			Bg_35.setLocation(0, 0);
-			Bg_35.setSize(835, 450);
-			frame.add(Bg_35);
-			Bg_35.setVisible(false);
-
-			bg_36 = getIcon("bg_36.png");
-			Bg_36 = new JLabel(bg_36);
-			Bg_36.setLocation(0, 0);
-			Bg_36.setSize(835, 450);
-			frame.add(Bg_36);
-			Bg_36.setVisible(false);
-
-			bg_37 = getIcon("bg_37.png");
-			Bg_37 = new JLabel(bg_37);
-			Bg_37.setLocation(0, 0);
-			Bg_37.setSize(835, 450);
-			frame.add(Bg_37);
-			Bg_37.setVisible(false);
-
-			bg_38 = getIcon("bg_38.png");
-			Bg_38 = new JLabel(bg_38);
-			Bg_38.setLocation(0, 0);
-			Bg_38.setSize(835, 450);
-			frame.add(Bg_38);
-			Bg_38.setVisible(false);
-
-			bg_39 = getIcon("bg_39.png");
-			Bg_39 = new JLabel(bg_39);
-			Bg_39.setLocation(0, 0);
-			Bg_39.setSize(835, 450);
-			frame.add(Bg_39);
-			Bg_39.setVisible(false);
-
+			Picture picture = new Picture();
+		
+//			開始頁面
+			Bggif_1 = picture.setPicture(bggif_1,Bggif_1,frame,"bggif_1.gif",50,240,200,200,true);
+			Bggif_2 = picture.setPicture(bggif_2,Bggif_2,frame,"bggif_2.gif",500,240,200,200,true);
+			Bg = picture.setPicture(bg, Bg, frame, "bg.png", 0, -80, 835, 700, true);
+			
+//			第一幕
+			Bg_1 = picture.setPicture(bg_1, Bg_1, frame, "bg_1.png", 0, 0, 835, 450, false);
+			Bg_11 = picture.setPicture(bg_11, Bg_11, frame, "bg_11.png", 0, 0, 835, 450, false);
+			Bg_12 = picture.setPicture(bg_12, Bg_12, frame, "bg_12.png", 0, 0, 835, 450, false);
+			Bg_13 = picture.setPicture(bg_13, Bg_13, frame, "bg_13.png", 0, 0, 835, 450, false);
+			Bg_14 = picture.setPicture(bg_14, Bg_14, frame, "bg_14.png", 0, 0, 835, 450, false);
+			
+//			第二幕
+			Bg_2 = picture.setPicture(bg_2, Bg_2, frame, "bg_2.png", 0, 0, 835, 450, false);
+			Bg_21 = picture.setPicture(bg_21, Bg_21, frame, "bg_21.png", 0, 0, 835, 450, false);
+			Bg_22 = picture.setPicture(bg_22, Bg_22, frame, "bg_22.png", 0, 0, 835, 450, false);
+			Bg_23 = picture.setPicture(bg_23, Bg_23, frame, "bg_23.png", 0, 0, 835, 450, false);
+			Bg_24 = picture.setPicture(bg_24, Bg_24, frame, "bg_24.png", 0, 0, 835, 450, false);
+			Bg_25 = picture.setPicture(bg_25, Bg_25, frame, "bg_25.png", 0, 0, 835, 450, false);
+			Bg_26 = picture.setPicture(bg_26, Bg_26, frame, "bg_26.png", 0, 0, 835, 450, false);
+			Bg_27 = picture.setPicture(bg_27, Bg_27, frame, "bg_27.png", 0, 0, 835, 450, false);
+			Bg_28 = picture.setPicture(bg_28, Bg_28, frame, "bg_28.png", 0, 0, 835, 450, false);
+			Bg_29 = picture.setPicture(bg_29, Bg_29, frame, "bg_29.png", 0, 0, 835, 450, false);
+			Gif_1 = picture.setPicture(gif_1, Gif_1, frame, "gif_1.gif", 0, 50, 835, 450, false);
+			Gif_2 = picture.setPicture(gif_2, Gif_2, frame, "gif_2.gif", 0, 50, 835, 400, false);
+			
+//			第三幕
+			Bg_31 = picture.setPicture(bg_31, Bg_31, frame, "bg_31.png", 0, 0, 835, 450, false);
+			Bg_32 = picture.setPicture(bg_32, Bg_32, frame, "bg_32.png", 0, 0, 835, 450, false);
+			Bg_33 = picture.setPicture(bg_33, Bg_33, frame, "bg_33.png", 0, 0, 835, 450, false);
+			Bg_34 = picture.setPicture(bg_34, Bg_34, frame, "bg_34.png", 0, 0, 835, 450, false);
+			Bg_35 = picture.setPicture(bg_35, Bg_35, frame, "bg_35.png", 0, 0, 835, 450, false);
+			
+//			結局幕
+			Bg_36 = picture.setPicture(bg_36, Bg_36, frame, "bg_36.png", 0, 0, 835, 450, false);
+			Bg_37 = picture.setPicture(bg_37, Bg_37, frame, "bg_37.png", 0, 0, 835, 450, false);
+			Bg_38 = picture.setPicture(bg_38, Bg_38, frame, "bg_38.png", 0, 0, 835, 450, false);
+			Bg_39 = picture.setPicture(bg_39, Bg_39, frame, "bg_39.png", 0, 0, 835, 450, false);
+			Gif_3 = picture.setPicture(gif_3, Gif_3, frame, "gif_3.gif", 0, 50, 835, 400, false);
+			Gif_4 = picture.setPicture(gif_4, Gif_4, frame, "gif_4.gif", 0, 50, 835, 400, false);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -461,7 +283,6 @@ public class Love_project extends JFrame implements ActionListener {
 		labelColor.setSize(10, y_Location);
 //		score = String.valueOf((200-y_Location) / 2);
 //		scoreArea.setText(score);
-		System.out.println("Latest y_Location =" + y_Location);
 	}
 //	-----------------------------------------------------------------------------
 
