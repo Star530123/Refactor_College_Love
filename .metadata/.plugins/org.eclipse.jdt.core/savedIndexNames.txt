@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+E:\Refactor_College_Love\.metadata\.plugins\org.eclipse.jdt.core
+366960316.index
+3691112608.index
